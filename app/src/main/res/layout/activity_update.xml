@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
-    tools:context=".AddActivity">
+    tools:context=".UpdateActivity"
+    android:id="@+id/updateLayout"
+    android:layout_margin="10dp">
 
     <EditText
-        android:id="@+id/etTile"
+        android:id="@+id/etTileUpdate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
@@ -19,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etAuthor"
+        android:id="@+id/etAuthorUpdate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -27,10 +28,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etTile" />
+        app:layout_constraintTop_toBottomOf="@+id/etTileUpdate" />
 
     <EditText
-        android:id="@+id/etPages"
+        android:id="@+id/etPagesUpdate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -38,16 +39,16 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAuthor" />
+        app:layout_constraintTop_toBottomOf="@+id/etAuthorUpdate" />
 
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
-        android:text="Add"
+        android:text="Update"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPages" />
+        app:layout_constraintTop_toBottomOf="@+id/etPagesUpdate" />
 </androidx.constraintlayout.widget.ConstraintLayout>
