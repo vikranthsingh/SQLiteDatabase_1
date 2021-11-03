@@ -11,7 +11,8 @@
         android:theme="@style/Theme.SQLiteDataBase_1">
         <activity
             android:name=".UpdateActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Update Book"/>
         <activity
             android:name=".AddActivity"
             android:exported="false"

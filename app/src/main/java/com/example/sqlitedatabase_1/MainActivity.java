@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         MyAdapter adapter = new MyAdapter(getApplicationContext(), id, title, author, pages, new CardClickListener() {
             @Override
-            public void onCardClick(int position) { //Here we are listening ..control will come to here..Ha so interface we should use..understood,,ook bro..Thanks MAma
+            public void onCardClick(int position) { //Here we are listening ..control will come to here
                 Intent intent = new Intent(MainActivity.this, UpdateActivity.class);
                 intent.putExtra("id", String.valueOf(id.get(position)));
                 intent.putExtra("title", String.valueOf(title.get(position)));

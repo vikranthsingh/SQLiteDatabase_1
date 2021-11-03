@@ -35,7 +35,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) { //Its not a problem.Still you can rum .But i dont knwo why its coming..One more issue
+    public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
         holder.txtId.setText(String.valueOf(id.get(position)));
         holder.txtTitle.setText(String.valueOf(title.get(position)));
         holder.txtAuthor.setText(String.valueOf(author.get(position)));
@@ -44,8 +44,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             @Override
             public void onClick(View v) {  //when you click on card then control will go from
                 cardClickListener.onCardClick(position);    //here to where we are listening
-                //its working no crash..so moved that block to activity because some lines of code needs to be written inside activity only
-                //To fix this issue we ued Interface concept which is very important..done mamai will follow tHAT
+                //so moved that block to activity because some lines of code needs to be written inside activity only
+                //To fix this issue we ued Interface concept which is very important..
                //writing this block inside activity is better practice..you have to use interface here..and write code in Activity
             }
         });
